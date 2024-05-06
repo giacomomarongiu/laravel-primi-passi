@@ -16,11 +16,24 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $data = [
+        'link' => 'Home',
+        'linkTwo' => 'About',
         'message' => 'Hello world with Data',
     ];
     
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/about', function () {
+
+    $data = [
+        'link' => 'Back Home',
+        'linkTwo' => 'About',
+        'message' => 'Hello world About',
+    ];
+
+    return view('about', $data);
+})->name('about');
 
 /* Route::get('/', function () {
 
