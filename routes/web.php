@@ -16,8 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $data = [
-        'link' => 'Home',
-        'linkTwo' => 'About',
+        'links' => ['home','about',],
         'message' => 'Hello world with Data',
     ];
     

@@ -10,8 +10,9 @@
 <header>
     <nav class="">
         <ul>
-            <li><a href="{{route('home')}}">{{ $link }}</a></li>
-            <li><a href="{{route('about')}}">{{ $linkTwo }}</a></li>
+            @foreach ($links as $link)
+            <li><a href="{{route($link)}}">{{ $link }}</a></li>
+            @endforeach
         </ul>
     </nav>
 </header>
