@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
+
+    $messageTwo = 'Hello world with compact';
+
+    return view('home', compact('messageTwo'));
 });
