@@ -8,8 +8,7 @@
 
 <body>
     <h1>Hello World!</h1>
-    <h1></h1>
-    <h1>{{ $messageTwo }}</h1>
+    <h1>{{ $message }}</h1>
 </body>
 
 </html>
