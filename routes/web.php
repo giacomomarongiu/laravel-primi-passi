@@ -13,10 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::get('/', function () {
+
+    $data = [
+        'message' => 'Hello world with Data',
+    ];
+    
+    return view('home', $data);
+});
+
+/* Route::get('/', function () {
 
     $messageTwo = 'Hello world with compact';
 
     return view('home', compact('messageTwo'));
-});
+}); */
